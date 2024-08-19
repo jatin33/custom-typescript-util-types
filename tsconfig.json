@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "strict": true,
+    "target": "es2022",
+    "declaration": true,
+    "jsx": "react", 
+    "outDir": "./dist",
+    "lib": ["dom", "es2022"],
+    "pretty": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "stripInternal": true
+  },
+  "include": ["src/**/*"]
+}
