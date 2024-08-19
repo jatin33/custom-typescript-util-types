@@ -8,8 +8,15 @@
     "/dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "reinstall": "rm -rf node_modules/ dist/ && npm install",
+    "tsc": "tsc -p . --noEmit",
+    "tsc:watch": "tsc -p . --noEmit -w",
+    "build": "npx tsc",
+    "prepublishOnly": "npm run reinstall && npm run build"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Jatin Panjwani",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
 }

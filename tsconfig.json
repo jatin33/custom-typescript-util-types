@@ -2,15 +2,16 @@
   "compilerOptions": {
     "module": "commonjs",
     "strict": true,
-    "target": "es2022",
+    "target": "es5",
     "declaration": true,
-    "jsx": "react", 
     "outDir": "./dist",
-    "lib": ["dom", "es2022"],
+    "lib": ["dom", "es5"],
     "pretty": true,
     "removeComments": true,
     "sourceMap": true,
-    "stripInternal": true
+    "stripInternal": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
   },
   "include": ["src/**/*"]
 }
